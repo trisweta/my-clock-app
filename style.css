@@ -1,0 +1,81 @@
+body {
+    font-family: 'Verdana', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #111;
+    color: #fff;
+    background-image: url('image1.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .panel {
+    display: none;
+    margin-top: 20px;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center; 
+  }
+  
+  .btn {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+  
+  .btn:hover {
+    background-color: #333;
+  }
+  
+  .timer-inputs {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .timer-inputs label {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .timer-inputs input {
+    width: 40px;
+    padding: 5px;
+  }
+  
+  #timer-display,
+  #stopwatch-display {
+    font-size: 1.5em;
+    margin-top: 10px;
+  }
+  
+  #clock {
+    font-size: 4em;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  

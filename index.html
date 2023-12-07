@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>My Clock App</title>
+</head>
+<body>
+  <div class="container text-center">
+    <div id="clock" class="mt-5 mb-3"></div>
+    <div class="buttons">
+      <button class="btn" onclick="openStopwatch()">Stopwatch</button>
+      <button class="btn" onclick="openTimer()">Timer</button>
+    </div>
+    <div id="stopwatch-panel" class="panel">
+      <button class="btn" onclick="startStopwatch()">Start/Stop</button>
+      <div id="stopwatch-display">Stopwatch: 00:00:00</div>
+      <button class="btn" onclick="resetStopwatch()">Reset</button>
+    </div>
+    <div id="timer-panel" class="panel">
+      <div class="timer-inputs">
+        <label for="timer-hours">Hours:</label>
+        <input type="number" id="timer-hours" min="0" value="0">
+        
+        <label for="timer-minutes">Minutes:</label>
+        <input type="number" id="timer-minutes" min="0" max="59" value="0">
+        
+        <label for="timer-seconds">Seconds:</label>
+        <input type="number" id="timer-seconds" min="0" max="59" value="0">
+      </div>
+      
+      <button class="btn" onclick="startTimer()">Start Timer</button>
+      <button class="btn" onclick="stopTimer()">Stop Timer</button>
+      <div id="timer-display"></div>
+      <button class="btn" onclick="resetTimer()">Reset</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
